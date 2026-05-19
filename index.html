@@ -16,7 +16,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 <link rel="stylesheet" href="static/css/style.css" />
 </head>
 <body>
@@ -191,25 +190,6 @@
   </div>
 </section>
 
-<!-- ===================== GALLERY ===================== -->
-<section id="gallery-section">
-  <div class="container">
-    <h2>Sample Gallery</h2>
-    <p>
-      A grid of qualitative results from the CV-Arena benchmark. Click any thumbnail to open the high-resolution version.
-      Replace these with curated favorites from your own evaluation set when ready.
-    </p>
-    <div class="gallery" id="gallery">
-      <a href="static/images/visual_main_v1.jpg" data-glightbox="title: Restoration tasks; description: 16 task types from CV-Arena."><img src="static/images/visual_main_v1.jpg" alt="Sample 1" /><span class="label">restoration</span></a>
-      <a href="static/images/visual_low_v1.jpg"  data-glightbox="title: Low-resolution showcase; description: High-resolution comparison."><img src="static/images/visual_low_v1.jpg"  alt="Sample 2" /><span class="label">geometry</span></a>
-      <a href="static/images/Data_Type_Arena_v3.jpg" data-glightbox="title: Task taxonomy; description: 16 task types from CV-Arena."><img src="static/images/Data_Type_Arena_v3.jpg" alt="Sample 3" /><span class="label">taxonomy</span></a>
-      <a href="static/images/pipeline_v6.png" data-glightbox="title: CogRetriever; description: Dual-track curation pipeline."><img src="static/images/pipeline_v6.png" alt="Sample 4" /><span class="label">pipeline</span></a>
-      <a href="static/images/bootstrap_v2.png" data-glightbox="title: Active Elo; description: Human-AI preference protocol."><img src="static/images/bootstrap_v2.png" alt="Sample 5" /><span class="label">active elo</span></a>
-      <a href="static/images/win_rate_v3.png" data-glightbox="title: Win rate matrix; description: Pairwise model comparison."><img src="static/images/win_rate_v3.png" alt="Sample 6" /><span class="label">results</span></a>
-    </div>
-  </div>
-</section>
-
 <!-- ===================== LIMITATIONS ===================== -->
 <section id="limitations">
   <div class="container">
@@ -256,14 +236,8 @@
 
 <!-- Scripts -->
 <script type="module" src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script src="static/js/leaderboard.js"></script>
 <script>
-  // Lightbox
-  document.addEventListener("DOMContentLoaded", () => {
-    if (window.GLightbox) GLightbox({ selector: '#gallery a' });
-  });
-
   // Copy BibTeX
   document.getElementById('copy-bibtex').addEventListener('click', async () => {
     const text = document.getElementById('bibtex-block').innerText;
