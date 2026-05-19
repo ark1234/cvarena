@@ -15,7 +15,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
 <link rel="stylesheet" href="static/css/style.css" />
 </head>
 <body>
@@ -160,32 +159,18 @@
   <div class="container">
     <h2>Visual Comparisons</h2>
     <p>
-      Drag the divider to compare a <strong>baseline editor</strong> against <strong>CV-Agent</strong> on representative tasks.
-      Sliders below use placeholder image pairs cropped from the visual showcase — drop your own paired outputs into
-      <code>static/images/compare/</code> and update <code>index.html</code> accordingly.
+      Qualitative comparisons across CV-Arena tasks, contrasting outputs from leading proprietary, open-source, and
+      agentic editors on the same instruction–image pairs.
     </p>
 
-    <div class="compare-grid">
-      <div class="compare-card">
-        <img-comparison-slider>
-          <img slot="first"  src="static/images/visual_main_v1.jpg" alt="Baseline" />
-          <img slot="second" src="static/images/visual_low_v1.jpg"  alt="CV-Agent" />
-        </img-comparison-slider>
-        <div class="compare-meta">
-          <span class="instr">"Remove the price tag while preserving the texture."</span>
-          <span class="labels">← baseline · CV-Agent →</span>
-        </div>
-      </div>
-      <div class="compare-card">
-        <img-comparison-slider>
-          <img slot="first"  src="static/images/visual_low_v1.jpg" alt="Baseline" />
-          <img slot="second" src="static/images/visual_main_v1.jpg" alt="CV-Agent" />
-        </img-comparison-slider>
-        <div class="compare-meta">
-          <span class="instr">"Restore worn typography on the storefront sign."</span>
-          <span class="labels">← baseline · CV-Agent →</span>
-        </div>
-      </div>
+    <div class="figure">
+      <img src="static/images/visual_main_v1.jpg" alt="Main visual comparison across 21 systems" />
+      <div class="caption">Representative outputs across 21 systems on CV-Arena, spanning restoration, semantic manipulation, and physical interaction tasks.</div>
+    </div>
+
+    <div class="figure">
+      <img src="static/images/visual_low_v1.jpg" alt="Additional visual comparisons" />
+      <div class="caption">Additional comparisons highlighting geometric / structural control and typography / UI restoration cases.</div>
     </div>
   </div>
 </section>
@@ -235,7 +220,6 @@
 </footer>
 
 <!-- Scripts -->
-<script type="module" src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
 <script src="static/js/leaderboard.js"></script>
 <script>
   // Copy BibTeX
