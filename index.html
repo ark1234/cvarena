@@ -48,8 +48,8 @@
     <div class="badges">
       <a class="badge" href="static/pdfs/cvarena_paper.pdf" target="_blank" rel="noopener">Paper</a>
       <a class="badge alt" href="#" target="_blank" rel="noopener" id="arxiv-link">arXiv (soon)</a>
-      <a class="badge outline" href="https://github.com/ark1234/cvarena" target="_blank" rel="noopener">Code</a>
-      <a class="badge outline" href="#dataset">Dataset</a>
+      <a class="badge outline" href="https://github.com/ark1234/cv_arena" target="_blank" rel="noopener">Code</a>
+      <a class="badge outline" href="https://huggingface.co/datasets/Arklin123/CV-Arena-Sample-Dataset" target="_blank" rel="noopener">Dataset</a>
       <a class="badge outline" href="#leaderboard-section">Leaderboard</a>
       <a class="badge outline" href="#bibtex">BibTeX</a>
     </div>
@@ -140,10 +140,11 @@
 <section id="leaderboard-section">
   <div class="container">
     <h2>Leaderboard</h2>
-    <p class="muted">
-      Click any column to sort. Numbers shown below are <em>placeholders for the public page</em> — wire your real Active Elo
-      outputs to <code>static/js/leaderboard.js</code> (the <code>LEADERBOARD_DATA</code> array).
+    <p>
+      Full <strong>21-system</strong> leaderboard across four evaluation settings, reproduced from Table 4 of the paper.
+      Switch between <strong>Active Elo (Ours)</strong> and the three single-source baselines below; click any column to sort.
     </p>
+    <div class="tabs" id="leaderboard-tabs"></div>
     <div class="leaderboard-wrap">
       <table id="leaderboard" class="leaderboard"></table>
     </div>
@@ -219,6 +220,7 @@
 </footer>
 
 <!-- Scripts -->
+<script src="static/js/leaderboard_data.js"></script>
 <script src="static/js/leaderboard.js"></script>
 <script>
   // Copy BibTeX
