@@ -62,11 +62,6 @@ a:hover { text-decoration: underline; }
   color: var(--muted);
   font-size: 0.92rem;
   margin: 0 0 24px;
-  line-height: 1.8;
-}
-.affiliations .aff {
-  white-space: nowrap;
-  display: inline-block;
 }
 
 .corresponding {
